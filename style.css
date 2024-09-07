@@ -1,0 +1,1018 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'AR One Sans', sans-serif;
+}
+
+/* navbar */
+
+.navbar{
+    padding: 7px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 3px 0px 3px black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+   margin-bottom: 100px;
+   background-color: #fff;
+}
+
+.navbar .logo-container{
+    width: 100px;
+    height: 70px;
+}
+
+.navbar .logo-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar .nav-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.navbar .nav-items > div > a{
+    position: relative;
+}
+
+.navbar .nav-items > div > a{
+    text-decoration: none;
+    font-size: 19px;
+    margin: 0px 15px;
+    color: black;
+}
+
+.navbar .cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .cart i{
+    font-size: 18px;
+    margin: 0px 10px;
+    cursor: pointer;
+    color: black;
+}
+
+.navbar .nav-items > div > a::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgb(243, 223, 8);
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: width 0.5s ease-in 0ms; 
+}
+
+.navbar .nav-items div:hover a::after{
+    width: 100%;
+} 
+
+
+.navbar .cart i:hover{
+   color: rgb(241, 222, 8);
+}
+
+#response-navbar{
+    padding: 7px 150px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 3px 0px 3px black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+   margin-bottom: 100px;
+   background-color: #fff; 
+}
+
+.intro-page{
+    margin-top: 150px;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.intro-page .intro-1{
+    width: 55%;
+    padding: 100px 0px 0px 190px;
+}
+
+.intro-page .intro-1 > .headline{
+    margin-bottom: 50px;
+}
+
+.intro-page .intro-1 > .headline p{
+    font-size: 52px;
+    font-weight: 600;
+    word-spacing: 8px;
+    text-transform: capitalize;
+    line-height: 1.2;
+}
+
+.intro-page .intro-1 > .headline span{
+    color: rgb(241, 222, 8);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 60px;
+    letter-spacing: 4px;
+}
+
+.intro-page .intro-1 > .about-some{
+    width: 90%;
+    margin-bottom: 90px;
+}
+
+.intro-page .intro-1 > .about-some p{
+    font-size: 19px;
+    line-height: 1.3;
+}
+
+.intro-page .intro-1 > .order-button-1{
+    padding:12px 20px;
+    width: 22%;
+    background-color: rgb(232, 210, 47); 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.intro-page > .intro-1 .order-button-1 span{
+    margin-right: 10px;
+    color:white;
+    font-size: 19px;
+    text-transform: capitalize;
+}
+
+
+.intro-page > .intro-1 > .order-button-1 i{
+    color:white;
+    font-size: 19px;
+    transform: translateX(0px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.intro-page > .intro-1 > .order-button-1:hover i{
+    transform: translateX(10px);
+}
+
+.intro-page .intro-2 > .burger-container{
+    width: 700px;
+    height: 600px;
+    margin-right: 250px;
+}
+
+.intro-page .intro-2 > .burger-container img{
+    width: 100%;
+    height: 100%;
+}
+
+/* about us */
+
+.About{
+    width: 100%;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.About .about-us-1{
+    width: 50%;
+    padding: 20px 0px 0px 20px;
+}
+
+.About .about-us-1 .img-container{
+    width: 980px;
+    height: 700px;
+    padding-left: 100px;
+   
+}
+
+.About .about-us-1 .img-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.About .about-us-2{
+    width: 50%;
+    padding: 20px 0px 0px 20px;
+}
+
+.About .about-us-2 .head{
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.About .about-us-2 .head span{
+    font-size: 63px;
+    font-weight: 600;
+}
+
+.About .about-us-2 .head p{
+    color: rgb(241, 222, 8);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 60px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.About .about-us-2 .para{
+    width: 90%;
+    margin-bottom: 100px;
+}
+
+.About .about-us-2 .para > div{
+    margin-bottom: 60px;
+}
+
+.About .about-us-2 .para > div > span{
+    font-size: 29px;
+    font-weight: 600;
+}
+
+.About .about-us-2 .para p{
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.About .about-us-2 .order-button-2{
+    padding:12px 20px;
+    width: 22%;
+    background-color: rgb(232, 210, 47); 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.About .about-us-2 .order-button-2 span{
+    color:white;
+    font-size: 19px;
+    text-transform: capitalize;
+    margin-right: 10px;
+}
+
+
+.About .about-us-2 .order-button-2 i{
+    color:white;
+    font-size: 19px;
+    transform: translateX(0px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.About > .about-us-2 > .order-button-2:hover i{
+    transform: translateX(10px);
+}
+
+/* menu */
+
+.menu{
+    padding: 0px 30px;
+    margin-bottom: 100px;
+}
+
+.menu .menu-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.menu .menu-heading p{
+    font-size: 43px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.menu .menu-heading span{
+    color: rgb(241, 222, 8);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.menu .ratting-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0px 30px;
+    margin-left: 30px;
+}
+
+.menu .ratting-container .rattingcard{
+    padding: 13px;
+    width: 22%;
+    box-shadow: 1px 1px 5px black;
+    position: relative;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.menu .ratting-container .rattingcard > .rate-img-1{
+    width: 100%;
+    height: 240px;
+    background-image: url("./image1/buger.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.menu .ratting-container .rattingcard > .rate-img-2{
+    width: 100%;
+    height: 240px;
+    background-image: url("./image1/pasta.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu .ratting-container .rattingcard > .rate-img-3{
+    width: 100%;
+    height: 240px;
+    background-image: url("./image1/lasagna.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu .ratting-container .rattingcard > .rate-img-4{
+    width: 100%;
+    height: 240px;
+    background-image: url("./image1/chocolate_drink-2.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu .ratting-container .rattingcard > .rate-img-5{
+    width: 100%;
+    height: 240px;
+    background-image: url("./image1/pizza-pollo-arrostojpg.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu .ratting-container .rattingcard > .rate-img-6{
+    width: 100%;
+    height: 240px;
+    background-image: url("./image1/Hot_Dogs.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu .ratting-container .rattingcard > .rate-img-7{
+    width: 100%;
+    height: 240px;
+    background-image: url("./image1/juse.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu .ratting-container .rattingcard > .rate-img-8{
+    width: 100%;
+    height: 240px;
+    background-image: url("./image1/biryani.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu .ratting-container .rattingcard > .rate-img-9{
+    width: 100%;
+    height: 240px;
+    background-image: url("./image1/chocolate.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu .ratting-container .rattingcard > .rate-img-10{
+    width: 100%;
+    height: 240px;
+    background-image: url("./image1/ice_cream.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu .ratting-container .rattingcard > .rate-img-11{
+    width: 100%;
+    height: 240px;
+    background-image: url("./image1/Spanchi.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu .ratting-container .rattingcard > .rate-img-12{
+    width: 100%;
+    height: 240px;
+    background-image: url("./image1/sandwich.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.menu .ratting-container .rattingcard > h4{
+    color: rgb(241, 222, 8);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.menu .ratting-container .rattingcard > p{
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.menu .ratting-container .rattingcard .currency{
+    text-align: center;
+    width: 100%;
+    margin-bottom:10px;
+}
+
+.menu .ratting-container .rattingcard .currency span{
+    font-size: 18px;
+    color: rgb(241, 222, 8);
+}
+
+.menu .ratting-container .rattingcard .rattings{
+    text-align: center;
+    width: 100%;
+    margin-bottom:10px;
+}
+
+.menu .ratting-container .rattingcard .rattings i{
+    color: gold;
+    font-size: 18px;
+}
+
+.menu .ratting-container .rattingcard .order-button-3{
+    padding: 8px 10px;
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+}
+
+.menu .ratting-container .rattingcard .order-button-3 p{
+    color: white;
+    font-size: 18px;
+}
+
+.menu .ratting-container .rattingcard .rate-flow{
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    transform: translateX(0px);
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+}
+
+.menu .ratting-container .rattingcard .rate-flow i{
+    font-size: 25px;
+    color: black;
+}
+
+.menu .ratting-container .rattingcard:hover .rate-img-1{
+    background-size: cover;
+}
+
+.menu .ratting-container .rattingcard:hover .rate-img-2{
+    background-size: cover;
+}
+
+.menu .ratting-container .rattingcard:hover .rate-img-3{
+    background-size: cover;
+}
+
+.menu .ratting-container .rattingcard:hover .rate-img-4{
+    background-size: cover;
+}
+
+.menu .ratting-container .rattingcard:hover .rate-img-5{
+    background-size: cover;
+}
+
+.menu .ratting-container .rattingcard:hover .rate-img-6{
+    background-size: cover;
+}
+
+.menu .ratting-container .rattingcard:hover .rate-img-7{
+    background-size: cover;
+}
+
+.menu .ratting-container .rattingcard:hover .rate-img-8{
+    background-size: cover;
+}
+
+.menu .ratting-container .rattingcard:hover .rate-img-9{
+    background-size: cover;
+}
+
+.menu .ratting-container .rattingcard:hover .rate-img-10{
+    background-size: cover;
+}
+
+.menu .ratting-container .rattingcard:hover .rate-img-11{
+    background-size: cover;
+}
+
+.menu .ratting-container .rattingcard:hover .rate-img-12{
+    background-size: cover;
+}
+
+.menu .ratting-container .rattingcard:hover .rate-flow{
+    transform: translateX(-50px);
+    opacity: 1;
+}
+
+.menu .ratting-container .rattingcard .rate-flow i:hover{
+    color: rgb(241, 222, 8);
+}
+
+/* gallery */
+
+.gallery{
+    padding: 0px 40px;
+    margin-bottom: 100px;
+}
+
+.gallery .gallery-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.gallery .gallery-head p{
+    font-size: 43px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.gallery .gallery-head span{
+    color: rgb(241, 222, 8);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.gallery .gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 100px;
+}
+
+.gallery .gallery-container .gallery-pic{
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 35px;
+    margin-right: 35px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px black;
+}
+
+.gallery .gallery-container .gallery-pic .pic-contain{
+    width: 100%;
+    height: 350px;
+}
+
+.gallery .gallery-container .gallery-pic .pic-contain > img{
+    width: 100%;
+    height: 100%;
+}
+
+.gallery .gallery-container .gallery-pic .effect{
+    width: 100%;
+    height: 350px;
+    background-color: black;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.gallery .gallery-container .gallery-pic .hover-upper-effect{
+    width: 100%;
+    height: 350px;
+    padding: 15px;
+     position: absolute;
+    top: 0;
+    left: 0; 
+    transform: translateY(300px);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.gallery .gallery-container .gallery-pic .hover-upper-effect > h5{
+    color: rgb(241, 222, 8);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.gallery .gallery-container .gallery-pic .hover-upper-effect > p{
+    width: 90%;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+
+.gallery .gallery-container .gallery-pic .hover-upper-effect > .order-button-4{
+    width: 40%;
+    margin:  0 auto;
+    padding: 9px;
+    text-align: center;
+    background-color: rgb(241, 222, 8);
+    cursor: pointer;
+}
+
+.gallery .gallery-container .gallery-pic .hover-upper-effect > .order-button-4 > span{
+    font-size: 18px;
+    color: black;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.gallery .gallery-container .gallery-pic:hover .effect{
+    opacity: 0.2;
+}
+
+.gallery .gallery-container .gallery-pic:hover .hover-upper-effect{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+/* customer reviews */
+
+.reviews{
+    padding: 0px 40px;
+    margin-bottom: 100px;
+}
+
+.reviews .coustmer-reviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.reviews .coustmer-reviews p{
+    font-size: 47px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.reviews .coustmer-reviews span{
+    color: rgb(241, 222, 8);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.reviews .container_card{
+    display: flex;
+    width: 87%;
+    margin: 0 auto;
+}
+
+.reviews .container_card .review_card{
+    width: 23%;
+    box-shadow: 1px 1px 5px black;
+    padding: 7px;
+    margin-right: 22px;
+    margin-bottom: 22px;
+    border-radius: 5px;
+}
+
+.reviews .container_card .review_card .img-con{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid lightgray;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom:5px;
+}
+
+.reviews .container_card .review_card .img-con > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.reviews .container_card .review_card h4{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom:5px;
+}
+
+.reviews .container_card .review_card .stars{
+    text-align: center;
+    margin-bottom:5px ;
+}
+
+.reviews .container_card .review_card .stars i{
+    color: rgb(241, 222, 8);
+    font-size: 14px;
+}
+
+.reviews .container_card .review_card .social{
+    text-align: center;
+    margin-bottom:10px ;
+    cursor: pointer;
+}
+
+.reviews .container_card .review_card .social i{
+    font-size: 14px;
+    margin: 0px 2px;
+    color: black;
+}
+
+.reviews .container_card .review_card .social i:hover{
+    color: rgb(241, 222, 8);
+}
+
+.reviews .container_card .review_card p{
+    width: 90%;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* orders */
+
+.order-now{
+    background-image: url("./image1/bg2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 0px 30px;
+    margin-bottom: 100px;
+}
+
+.order-now .order-headmark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.order-now .order-headmark p{
+    font-size: 47px;
+    font-weight: 600;
+}
+
+.order-now .order-headmark span{
+    color: rgb(241, 222, 8);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-right: 20px;
+}
+
+.order-now .order-parts-container{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.order-now .order-parts-container .order-img{
+    width: 50%;
+    padding-left: 140px;
+}
+
+.order-now .order-parts-container .order-img .img-container{
+    width: 600px;
+    height: 600px;
+}
+
+.order-now .order-parts-container .order-img .img-container > img{
+    width: 100%;
+    height: 100%;
+}
+
+.order-now .order-parts-container .order-input{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 180px;
+}
+
+.order-now .order-parts-container .order-input .order-1{
+    margin-right: 50px;
+    width: 35%;
+}
+
+.order-now .order-parts-container .order-input .order-2{
+    margin-right: 50px;
+    width: 35%;
+}
+
+.order-now .order-parts-container .order-input .order-1 .input-item{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.order-now .order-parts-container .order-input .order-2 .input-item{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.order-now .order-parts-container .order-input .order-1 .input-item p{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.order-now .order-parts-container .order-input .order-2 .input-item p{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.order-now .order-parts-container .order-input .order-1 .input-item > input{
+    width: 100%;
+    padding: 10px;
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+}
+
+.order-now .order-parts-container .order-input .order-2 .input-item > input{
+    width: 100%;
+    padding: 10px;
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+}
+
+.order-now .order-parts-container .order-input .order-1 .input-item > input:focus{
+    outline-color: rgb(241, 222, 8);
+}
+
+.order-now .order-parts-container .order-input .order-2 .input-item > input:focus{
+    outline-color: rgb(241, 222, 8);
+}
+
+.order-now .order-parts-container .order-input .order-1 > .button{
+    width: 40%;
+    padding: 10px;
+    background-color: rgb(228, 162, 8);
+    cursor: pointer;
+   margin-top: 50px;
+}
+
+.order-now .order-parts-container .order-input .order-1 > .button p{
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.order-now .order-parts-container .order-input .order-1 > .button:hover{
+    background-color: rgb(230, 174, 43);
+}
+
+.footer{
+    padding: 50px 200px;
+    display: flex;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.footer .location{
+    margin: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .location h4{
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.footer .location p{
+    font-size: 17px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.footer .location p:hover{
+    color: rgb(241, 222, 8);
+}
+
+.footer .quick-plan{
+    margin: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .quick-plan h4{
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.footer .quick-plan p{
+    font-size: 17px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.footer .quick-plan p:hover{
+    color: rgb(241, 222, 8);
+}
+.footer .contact{
+    margin: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .contact h4{
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.footer .contact p{
+    font-size: 17px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.footer .contact p:hover{
+    color: rgb(241, 222, 8);
+}
+
+.footer .our-service{
+    margin: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .our-service h4{
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.footer .our-service p{
+    font-size: 17px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.footer .our-service p:hover{
+    color: rgb(241, 222, 8);
+}
+
+.footer .follows{
+    margin: 0px 80px;
+    text-align: center;
+}
+
+.footer .follows h4{
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.footer .follows i{
+    font-size: 18px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.footer .follows i:hover{
+    color: rgb(241, 222, 8);
+}
+
